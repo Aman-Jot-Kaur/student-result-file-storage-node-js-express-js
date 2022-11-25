@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend student</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+</head>
+
+<body style="font-family:verdana;">
+
+    <legend style="text-align: center;font-family:verdana;font-size: 35px;">
+        <u><i> Student Information Form </i></u>
+    </legend>
+    <form action="/home" method="post" style="margin:auto;width:500px;background-color:rgb(224,224,224);">
+        <div class="mb-3 mx-3">
+            <label class="form-label">Name(Maximum 32 characters)</label>
+            <input type="text" maxlength="32" pattern="^[A-Za-z]+[A-Za-z ]*$" id="name" class="form-control" name="Name"
+                placeholder="Student Name" min="4" max="50" required>
+        </div>
+        <div class="mb-3 mx-3">
+            <label class="form-label">Roll number</label>
+            <input type="number" id="id" class="form-control" name="id" placeholder="Enter Roll Number" min="1"
+                max="10000000000" required>
+        </div>
+        <div class="mb-3 mx-3">
+            <label class="form-label">Address(Maximum 150 characters)</label>
+            <input type="text" id="address" class="form-control" name="address" placeholder="Enter address" min="15"
+                max="150" required>
+        </div>
+        <p class="mx-3" style="font-family:verdana;"><b><i>Scores of subjects</i></b></p>
+        <div class="mb-3 mx-3">
+            <label class="form-label">Language C++</label>
+            <input type="number" id="" class="form-control marks" name="cpp" placeholder="Enter C++ Scores" min="0"
+                max="100" required>
+        </div>
+        <div class="mb-3 mx-3">
+            <label class="form-label">Data structures in JAVA</label>
+            <input type="number" id="" class="form-control marks" name="java" placeholder="Enter JAVA Scores" min="0"
+                max="100" required>
+        </div>
+        <div class="mb-3 mx-3">
+            <label class="form-label">Database management system(DBMS)</label>
+            <input type="number" id="" class="form-control marks" name="dbms" placeholder="Enter DBMS Scores" min="0"
+                max="100" required>
+        </div>
+        <div class="mb-3 mx-3">
+            <label class="form-label">Computer Networking(CN)</label>
+            <input type="number" id="" class="form-control marks" name="cn" placeholder="Enter CN Scores" min="0"
+                max="100" required>
+        </div>
+        <div class="mb-3 mx-3">
+            <label class="form-label">Operating Systems(OS)</label>
+            <input type="number" id="" class="form-control marks" name="os" placeholder="Enter OS Scores" min="0"
+                max="100" required>
+        </div>
+        <input type="submit" class="btn btn-primary mx-3" value="Submit">
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
